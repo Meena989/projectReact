@@ -1,13 +1,16 @@
 import React from 'react';
-import SearchIcon from '@material-ui/icons/Search';
+//import SearchIcon from '@material-ui/icons/Search';
 function Search(){
+    const Searchstyle={
+        top:"0px",width:"250px",float:"center",fontSize:30,paddingTop:"0px"
+
+    }
     return(
-        <div className="sea">
+        <div className="sea" style={Searchstyle}>
                     
-                     <button className="search-btn">
-                    <SearchIcon/>
-                    </button> 
+                    
                     <input type="text" className="searchcontrol" placeholder="Search"/>
+                     
                     
                     </div>
     )

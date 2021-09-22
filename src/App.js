@@ -5,6 +5,7 @@ import {Switch,Route,BrowserRouter} from 'react-router-dom'
 import Login from './components/Login';
 
 import Dashboard from './components/Dashboard';
+//import './App.css'
 
 const App = () =>{
   return(

@@ -3,6 +3,7 @@ import {ImHome2} from 'react-icons/im';
 import BeachAccessIcon from '@material-ui/icons/BeachAccess';
 import ExploreIcon from '@material-ui/icons/Explore';
 import FlightIcon from '@material-ui/icons/Flight';
+
 function Menu(){
     const style={width:45,height:25,color:'lightcoral'}
     return(

@@ -1,6 +1,6 @@
 import React from "react";
 import { SidebarData } from "./SidebarData";
-function navbar(){
+function Side(){
   return (
     <div className="dash">
     <div className="side">
@@ -19,4 +19,4 @@ function navbar(){
     </div>
   )
 }
-export default navbar;
+export default Side;

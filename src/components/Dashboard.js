@@ -1,11 +1,12 @@
 import React from 'react';
-import img5 from '../assets/img5.jpg';
+import img6 from '../assets/img6.jpeg';
 import Navbar from './Navbar'; 
 import Search from './Searchbar';
 import Menu from './Menu';
 import Bestexps from './Bestexps';
-//import Hotels from './Hotels';
+import Hotels from './Hotels';
 function Dashboard(){
+    
     return(
         
         <div fluid className="dashboard">
@@ -19,7 +20,7 @@ function Dashboard(){
                     <Search/>
                     </div>
                 <div className="prof">
-                    Hello, User <img className="imge" src={img5} alt={"xyz"}/>
+                    Hello, User <img style={{width:"50px",height:"35px"}} src={img6} alt={"xyz"}/>
                 </div>
                 </div>
             <div className="box-menu">
@@ -27,6 +28,9 @@ function Dashboard(){
             </div>
                 <div className="Exp">
                     <Bestexps/>
+                </div>
+                <div className="Hotel">
+                    <Hotels/>
                 </div>
                 
             </div>

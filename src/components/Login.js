@@ -24,7 +24,7 @@ class Login extends Component{
         };
     }
     routeChange() {
-        let path = "/Dashboard";
+        let path = "Dashboard";
         this.props.history.push(path);
       }
     handleSubmit = event => {
