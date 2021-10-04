@@ -12,6 +12,7 @@ function Bestexps(){
 return(
     <div>
     <h2>Best Experiences</h2>
+    <h5 style={{paddingLeft:"80px",float:"right",color:"red"}}>see all</h5>
     <div className="pics">
                     <div className="child">
                     <img className="img" src={image1} alt={"prop"}/>

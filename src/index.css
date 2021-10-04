@@ -144,7 +144,7 @@ display: grid;
   
 }
 .content{
-  background-color:rgb(247, 205, 191);
+  background-color:rgb(245, 231, 231);
   border-top-left-radius: 35px;
   border-bottom-left-radius: 35px;
   padding-left: 0px;
@@ -192,8 +192,8 @@ display: grid;
 
 .box-menu{
   display: flex;
-  padding-left: 10px;
-  padding-top: 60px;
+  padding-left: 50px;
+  padding-top: 120px;
   position: absolute;
   float: left;
  
@@ -203,17 +203,16 @@ display: grid;
   padding-top: 10px;
 }
 .box .hi{
-  margin-right: 5px;
+  margin-right: 25px;
 }
 .box-menu .button{
-  background-color: rgb(194, 169, 169);
+  background-color: #E2E6E9;
   border:none;
   border-radius: 5px;
-  height: 50px;
+  height:45px;
   width:50px;
-  margin-right: 1px;
+  margin-right: 60px;
   cursor: pointer;
-  padding: 0%;
 }
 .box-menu .menu1{
   float:left;
@@ -225,7 +224,7 @@ display: grid;
 text-align:start;
 font-family: monospace;
 font-size: 14px;
-padding-top: 0px;
+padding-top: 10px;
 }
 .box-menu .container{
   
@@ -234,7 +233,7 @@ padding-top: 0px;
 .Exp{
   display: flex;
   padding-left: 50px;
-  padding-top: 270px;
+  padding-top: 240px;
   position: absolute;
   float: left;
 }
@@ -282,10 +281,17 @@ padding-top: 0px;
   font-size: 13px;
 }
 .Exp .pics .img{
-  height:230px;
-  width: 190px;
+  height:190px;
+  width: 155px;
   border-radius: 10px;
   margin-right: 40px;
+}
+.Hotel{
+  display: contents;
+  padding-left: 50px;
+  
+  position: absolute;
+  float: left;
 }
 @media only screen and (min-width : 768px) {
   #omos{

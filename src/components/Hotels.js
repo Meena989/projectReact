@@ -1,7 +1,7 @@
 import React from 'react';
 import img7 from '../assets/img7.jpeg'
 import img8 from '../assets/img8.jpeg'
-//import './hotel.css'
+
 function Hotels(){
     const imgStyle={
     padding:"10px",
@@ -15,22 +15,24 @@ function Hotels(){
     const cardStyle={
         width:"200px",
         height:"70px",
-        marginLeft:"200px",
+        marginLeft:"0px",
         marginTop:"500px",
         float:"left"
     }
     const descrypt={
         position:"absolute",
         marginLeft:"70px",
+        paddingLeft:"0px",
         float:"left"
 
     }
     return(
         <div>
-            <h4 style={{marginTop:"50px"}}>Top Hotels</h4>
+            <h4>Top Hotels</h4>
+            <h5 style={{paddingLeft:"80px",float:"right",color:"red"}}>see all</h5>
             <div className="card" style={cardStyle}>
                 <img  style={imgStyle}src={img7} alt=" loading"/>
-                <div style={descrypt}>The golden Hotel<div>*&nbsp;<i className="fas fa-star"></i><b>9.0</b></div></div>
+                <div style={descrypt}>The golden Hotel<div>*&nbsp;<b>9.0</b></div></div>
             </div>
             <div className="card" style={cardStyle}>
                 <img  style={imgStyle}src={img8} alt=" loading"/>

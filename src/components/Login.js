@@ -1,7 +1,5 @@
 import React, { Component } from "react";
-//import { Redirect, Link, NavLink, Route, withRouter} from "react-router-dom";
-import './login.css'
-import '../components/Dashboard'
+//mport { Redirect, Link, NavLink, Route, withRouter} from "react-router-dom";
 
 class Login extends Component{
     constructor(props) {
@@ -9,22 +7,22 @@ class Login extends Component{
         this.routeChange = this.routeChange.bind(this);
         this.state ={
            form:{ 
-            email: "",
+            username: "",
             password: ""
         },
         formErrorMessage:{
-        emailError:"",
+        usernameError:"",
         passwordError:""
         },
         formValid:{
-            email:false,
+            username:false,
             password:false,
             buttonActive:false
         }
         };
     }
     routeChange() {
-        let path = "Dashboard";
+        let path = "/dashboard";
         this.props.history.push(path);
       }
     handleSubmit = event => {
@@ -41,15 +39,15 @@ class Login extends Component{
         let errMsg=''
         let formErrDum = this.state.formErrorMessage
         let formValidDum = this.state.formValid
-        if(fieldName==="email")
+        if(fieldName==="username")
         {
             if(value===""){
                 errMsg="Field required";
             }
             else
             errMsg="";
-        formErrDum.emailError = errMsg;
-        formValidDum.email = errMsg ? false : true;
+        formErrDum.usernameError = errMsg;
+        formValidDum.username = errMsg ? false : true;
       }
       if(fieldName==="password"){
           if(value===""){
@@ -63,30 +61,39 @@ class Login extends Component{
           formErrDum.passwordError = errMsg;
         formValidDum.password = errMsg ? false : true;
       }
-      formValidDum.buttonActive = formValidDum.email && formValidDum.password;
+      formValidDum.buttonActive = formValidDum.username && formValidDum.password;
     this.setState({ formErrorMessage : formErrDum, formValid : formValidDum});
     }
-
     render(){
-        let{passwordError} = this.state.formErrorMessage
-          return(
-              <div className='div-login'>
-                  
-                      <h1>ACCOUNT LOGIN</h1>
-                  <div>
-                      <form onSubmit = {this.handleSubmit}>
-                          Email<input type='email' name='email' placeholder='email...' required onChange={this.handleChange}/>
-                        
-                          Password<input type='password' name='pwd' placeholder='password...' required onChange={this.handleChange}/>
-                          <span className='text-danger'>{passwordError}</span>
-                          <button disabled={!this.state.formValid.buttonActive} className="button" onClick={this.routeChange}>Login</button>
-                      </form>
-                  </div>
-              </div>
-          )
-      }
-  }
-    export default Login;
+        let {usernameError,passwordError} = this.state.formErrorMessage;
+        return(
+            <div className="log">
+                <form onSubmit={this.handleSubmit}>
+                    <div className="form-inner">
+                    <h2> ACCOUNT LOGIN</h2>
+                 <div className="form-group">   
+                <label htmlFor='username'>USERNAME</label>
+                <input type="text" name="username" placeholder="username"onChange={this.handleChange}/>
+                <span className='text-danger'>{usernameError}</span>
+                </div>
+                <div className="form-group">
+                <label htmlFor='password'>PASSWORD</label>
+                <input type="password" name="password" placeholder="password" onChange={this.handleChange}/><br/>
+                <span className='text-danger'>{passwordError}</span><br/>
+                </div>
+                
+                
+               
+                <button disabled={!this.state.formValid.buttonActive} className="button" onClick={this.routeChange}>Login</button>
+                
+                </div>
+                </form>
+                </div>
+        )
+    }
+
+}
+export default Login;
     
                 
                 
