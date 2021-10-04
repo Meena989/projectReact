@@ -29,8 +29,14 @@ function Dashboard(){
                 <div className="Exp">
                     <Bestexps/>
                 </div>
+                <div className="Mexp">
+                    <a href="/more">see all</a>
+                </div>
                 <div className="Hotel">
                     <Hotels/>
+                </div>
+                <div className="Mhotel">
+                    <a href="/all">see all</a>
                 </div>
                 
             </div>

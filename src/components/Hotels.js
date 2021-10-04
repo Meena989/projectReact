@@ -1,6 +1,7 @@
 import React from 'react';
 import img7 from '../assets/img7.jpeg'
 import img8 from '../assets/img8.jpeg'
+import './hotel.css'
 
 function Hotels(){
     const imgStyle={
@@ -28,8 +29,8 @@ function Hotels(){
     }
     return(
         <div>
-            <h4>Top Hotels</h4>
-            <h5 style={{paddingLeft:"80px",float:"right",color:"red"}}>see all</h5>
+            <h4  style={{marginLeft:"190px"}}>Top Hotels</h4>
+            
             <div className="card" style={cardStyle}>
                 <img  style={imgStyle}src={img7} alt=" loading"/>
                 <div style={descrypt}>The golden Hotel<div>*&nbsp;<b>9.0</b></div></div>

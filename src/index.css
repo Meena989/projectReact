@@ -286,12 +286,12 @@ padding-top: 10px;
   border-radius: 10px;
   margin-right: 40px;
 }
-.Hotel{
-  display: contents;
-  padding-left: 50px;
-  
-  position: absolute;
-  float: left;
+.Mexp{
+  position:absolute;
+ top:250px;
+ right:230px;
+ padding-top: 40px;
+ padding-right: 10px;
 }
 @media only screen and (min-width : 768px) {
   #omos{
